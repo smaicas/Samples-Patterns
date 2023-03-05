@@ -38,7 +38,7 @@ class Program
             DoSomethingUsingSingleton6
         );
 
-        // Eager Thread Safe (by Lazy wrap)
+        // Lazy Thread Safe (by Lazy wrap)
         Parallel.Invoke(
             DoSomethingUsingSingleton7,
             DoSomethingUsingSingleton8
