@@ -5,16 +5,16 @@ class Program
     static void Main(string[] args)
     {
         //ONE Thread program
-        //NotThreadSafeSingleton notThreadSafeSingletonOne = NotThreadSafeSingleton.GetInstance();
+        NotThreadSafeSingleton notThreadSafeSingletonOne = NotThreadSafeSingleton.GetInstance;
 
-        //notThreadSafeSingletonOne.Add(10);
+        notThreadSafeSingletonOne.Add(10);
 
-        //NotThreadSafeSingleton notThreadSafeSingletonTwo = NotThreadSafeSingleton.GetInstance();
+        NotThreadSafeSingleton notThreadSafeSingletonTwo = NotThreadSafeSingleton.GetInstance;
 
-        //notThreadSafeSingletonTwo.Add(15);
+        notThreadSafeSingletonTwo.Add(15);
 
-        //notThreadSafeSingletonOne.PrintResult();
-        //notThreadSafeSingletonTwo.PrintResult();
+        notThreadSafeSingletonOne.PrintResult();
+        notThreadSafeSingletonTwo.PrintResult();
 
         // MULTI THREAD program
         // It's supposed NotThreadSafeSingleton used in multi-thread programs
